@@ -95,7 +95,7 @@ def k_pop_counter(path):
 import os
 
 # Give the directory you wish to iterate through
-my_dir = "/home/runner/KPopTokenizeNew/Lyrics"
+my_dir = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/Lyrics"
 
 # Using os.listdir to create a list of all of the files in dir
 dir_list = os.listdir(my_dir)
@@ -110,7 +110,7 @@ for f in dir_list:
   x = (k_pop_counter(f'Lyrics/{f}'))
   x.to_csv(f'DFs/{f}.csv')
 
-df_dir = "/home/runner/KPopTokenizeNew/DFs"
+df_dir = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/DFs"
 df_dir_list = os.listdir(df_dir)
 
 print(df_dir_list)
