@@ -35,3 +35,32 @@ print(index_end)
 hangul_lyrics = (lyrics[index_start + 1:index_end])
 
 print(hangul_lyrics)
+
+import string
+
+def text_to_list(text):
+    # Remove punctuation and convert the text to a list
+    words = text.split()
+    return words
+
+# Example usage
+input_text = hangul_lyrics
+word_list = text_to_list(input_text)
+
+word_list = word_list[1:]
+print(word_list)
+
+
+import string
+
+def remove_punctuation_and_quotes(text):
+    translator = str.maketrans('', '', string.punctuation + "‘’“”")
+    text = text.translate(translator)
+    return text.lower()
+
+
+final_list = []
+for word in word_list:
+    final_list.append(remove_punctuation_and_quotes(word))
+                      
+print(final_list)
