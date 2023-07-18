@@ -17,7 +17,7 @@ for span in soup.find_all('span'):
 
 #set index for the subset including Hangul lyrics
 
-print(test_list)
+#print(test_list)
 
 index_start = test_list.index("Hangul")
 index_end = test_list.index("Translation")
