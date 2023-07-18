@@ -17,7 +17,7 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
 
 
 # Specify the URL of the webpage to scrape
-url = "https://colorcodedlyrics.com/2021/01/11/g-i-dle-hwaa-hwa/"
+url = "https://colorcodedlyrics.com/2023/01/02/newjeans-omg/"
 
 # Send a GET request to the webpage
 response = requests.get(url)
@@ -93,6 +93,7 @@ text = og_title
 # Split the string by spaces
 words = text.split(' - ')
 words = [word.split('Lyrics') for word in words]
+
 
 title = words[1][0]
 artist = words[0][0]
