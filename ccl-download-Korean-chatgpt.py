@@ -14,7 +14,7 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
                        'word': str,
                        'language': str})
 
-url = "https://colorcodedlyrics.com/2020/02/21/bts-bangtansonyeondan-on/"
+url = "https://colorcodedlyrics.com/2015/05/29/seventeen-sebeuntin-adore-u-agginda/"
 
 # Send a GET request to the URL
 response = requests.get(url)
@@ -25,10 +25,12 @@ soup = BeautifulSoup(response.content, 'html.parser')
 # Find the table element using its HTML tag
 table = soup.find_all('table')
 
+print(table[1])
+
 if len(table) == 1:
     table = table[0]
 
-if len(table) == 2:
+if len(table) >= 1:
     table = (table[1])
 
 cells = table.find_all('td')
