@@ -14,7 +14,7 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
                        'word': str,
                        'language': str})
 
-url = "https://colorcodedlyrics.com/2019/06/19/stray-kids-side-effects-bujagyong/"
+url = "https://colorcodedlyrics.com/2019/03/04/txt-tumoloubaitugedeo-cat-dog/"
 
 # Send a GET request to the URL
 response = requests.get(url)
