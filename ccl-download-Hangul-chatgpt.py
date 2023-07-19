@@ -17,7 +17,7 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
 
 
 # Specify the URL of the webpage to scrape
-url = "https://colorcodedlyrics.com/2021/09/23/itzy-loco/"
+url = "https://colorcodedlyrics.com/2023/06/15/exo-let-me-in/"
 
 # Send a GET request to the webpage
 response = requests.get(url)
