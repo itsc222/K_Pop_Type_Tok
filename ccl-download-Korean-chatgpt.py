@@ -14,7 +14,7 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
                        'word': str,
                        'language': str})
 
-url = "https://colorcodedlyrics.com/2015/05/29/seventeen-sebeuntin-adore-u-agginda/"
+url = "https://colorcodedlyrics.com/2021/09/23/itzy-loco/"
 
 # Send a GET request to the URL
 response = requests.get(url)
@@ -143,8 +143,3 @@ print(main_df)
 
 path = f"/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/{artist}-{title}.csv"
 main_df.write_csv(path, separator=",")
-
-
-
-
-
