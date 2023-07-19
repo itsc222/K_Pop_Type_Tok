@@ -14,7 +14,7 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
                        'word': str,
                        'language': str})
 
-url = "https://colorcodedlyrics.com/2019/03/04/txt-tumoloubaitugedeo-cat-dog/"
+url = "https://colorcodedlyrics.com/2020/02/21/bts-bangtansonyeondan-on/"
 
 # Send a GET request to the URL
 response = requests.get(url)
@@ -25,8 +25,11 @@ soup = BeautifulSoup(response.content, 'html.parser')
 # Find the table element using its HTML tag
 table = soup.find_all('table')
 
+if len(table) == 1:
+    table = table[0]
 
-table = (table[1])
+if len(table) == 2:
+    table = (table[1])
 
 cells = table.find_all('td')
 
@@ -71,9 +74,11 @@ og_title = og_title_tag['content']
 text = og_title
 
 # Split the string by spaces
+words = text.split(' – ')
 words = text.split(' - ')
 words = [word.split('Lyrics') for word in words]
 
+print(words)
 
 title = words[1][0]
 artist = words[0][0]
