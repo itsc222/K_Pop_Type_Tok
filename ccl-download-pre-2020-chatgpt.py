@@ -14,43 +14,24 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
                        'word': str,
                        'language': str})
 
+url = "https://colorcodedlyrics.com/2017/12/11/twice-heart-shaker/"
 
-
-# Specify the URL of the webpage to scrape
-url = "https://colorcodedlyrics.com/2021/08/23/stray-kids-thunderous-soliggun/"
-
-# Send a GET request to the webpage
+# Send a GET request to the URL
 response = requests.get(url)
 
-# Check if the request was successful
-if response.status_code == 200:
-    # Parse the HTML content using BeautifulSoup
-    soup = BeautifulSoup(response.content, "html.parser")
-    
-    # Find the element that contains the lyrics
-    lyrics_div = soup.find("div", class_="entry-content")
-    
-    # Extract the text from the lyrics element
-    lyrics = lyrics_div.get_text(separator= '\n')
-    
-    # Print the lyrics
-    #print(lyrics)
-else:
-    print("Failed to retrieve the webpage.")
+# Create a BeautifulSoup object from the response content
+soup = BeautifulSoup(response.content, 'html.parser')
 
+# Find the table element using its HTML tag
+table = soup.find_all('table')
 
-#set indexes to extract only set of Hangul lyrics
+table = (table[1])
 
+cells = table.find_all('td')
 
-index_start = lyrics.index("Hangul")
-index_end = lyrics.index("Translation")
-# print(index_start)
-# print(index_end)
+hangul_lyrics = cells[1].text.strip()
 
-#Use the indexes to extract only the Hangul lyrics
-hangul_lyrics = (lyrics[index_start + 1:index_end])
-
-# print(hangul_lyrics)
+print(hangul_lyrics)
 
 import string
 
@@ -66,9 +47,7 @@ word_list = text_to_list(input_text)
 word_list = word_list[1:]
 # print(word_list)
 
-
-import string
-
+#strip punctuation and tokenize
 def remove_punctuation_and_quotes(text):
     translator = str.maketrans('', '', string.punctuation + "‘’“”")
     text = text.translate(translator)
@@ -156,3 +135,8 @@ print(main_df)
 
 path = f"/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/{artist}-{title}.csv"
 main_df.write_csv(path, separator=",")
+
+
+
+
+
