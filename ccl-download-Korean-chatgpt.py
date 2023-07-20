@@ -16,7 +16,10 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
                        'word': str,
                        'language': str})
 
-url = "https://colorcodedlyrics.com/2018/10/26/ateez-pirate-king-haejeokwang/"
+
+url = "https://colorcodedlyrics.com/2021/10/12/nct-127-gimme-gimme/"
+
+# print(url)
 
 # Send a GET request to the URL
 response = requests.get(url)
@@ -27,9 +30,9 @@ soup = BeautifulSoup(response.content, 'html.parser')
 # Find the table element using its HTML tag
 table = soup.find_all('table')
 
-print(len(table))
+# print(len(table))
 
-print(table[1])
+# print(table[1])
 
 if len(table) == 1:
     table = table[0]
@@ -41,7 +44,7 @@ cells = table.find_all('td')
 
 hangul_lyrics = cells[1].text.strip()
 
-print(hangul_lyrics)
+# print(hangul_lyrics)
 
 import string
 
@@ -68,7 +71,7 @@ final_list = []
 for word in word_list:
     final_list.append(remove_punctuation_and_quotes(word))
                       
-# print(final_list)
+print(final_list)
 
 # Find the meta tag with the property "og:title"
 og_title_tag = soup.find('meta', property='og:title')
@@ -84,7 +87,7 @@ words = text.split(' – ')
 words = text.split(' - ')
 words = [word.split('Lyrics') for word in words]
 
-print(words)
+# print(words)
 
 title = words[1][0]
 artist = words[0][0]
@@ -110,13 +113,13 @@ datetime_obj = datetime.fromisoformat(datetime_str)
 rounded_date = datetime_obj.date()
 date = str(rounded_date)
 
-print(date)
+# print(date)
 
 # Print the rounded date
-print('Rounded Date:', date)
-print('Title:', title)
-print('Artist:', artist)
-print('Lyrics:', final_list)
+# print('Rounded Date:', date)
+# print('Title:', title)
+# print('Artist:', artist)
+# print('Lyrics:', final_list)
 
 import langid
 
@@ -143,7 +146,7 @@ for word in word_list:
 
     main_df.extend(df)
 
-print(main_df)
+# print(main_df)
 
 path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/" + artist + "-" + title + ".csv"
 main_df.write_csv(path, separator=",")
@@ -173,7 +176,7 @@ for df in dfs:
     main_df_agg.extend(df)
 
 
-print(main_df_agg)
+# print(main_df_agg)
 
 path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/all_data.csv"
 main_df_agg.write_csv(path, separator=",")

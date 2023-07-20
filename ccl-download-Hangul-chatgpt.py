@@ -19,7 +19,8 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
 
 
 # Specify the URL of the webpage to scrape
-url = "https://colorcodedlyrics.com/2021/09/13/ateez-deja-vu/"
+
+url = "https://colorcodedlyrics.com/2021/10/12/nct-127-gimme-gimme/"
 
 # Send a GET request to the webpage
 response = requests.get(url)
@@ -91,6 +92,7 @@ og_title = og_title_tag['content']
 text = og_title
 
 # Split the string by spaces
+words = text.split(' – ')
 words = text.split(' - ')
 
 words = [word.split('Lyrics') for word in words]
@@ -156,6 +158,9 @@ for word in word_list:
     main_df.extend(df)
 
 print(main_df)
+
+path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/" + artist + "-" + title + ".csv"
+main_df.write_csv(path, separator=",")
 
 import glob
 import polars as pl
