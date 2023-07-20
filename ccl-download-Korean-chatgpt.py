@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import requests
 from bs4 import BeautifulSoup
 import polars as pl
@@ -14,7 +16,7 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
                        'word': str,
                        'language': str})
 
-url = "https://colorcodedlyrics.com/2016/08/26/nct-dream-chewing-gum/"
+url = "https://colorcodedlyrics.com/2018/10/26/ateez-pirate-king-haejeokwang/"
 
 # Send a GET request to the URL
 response = requests.get(url)
@@ -143,5 +145,35 @@ for word in word_list:
 
 print(main_df)
 
-path = f"/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/{artist}-{title}.csv"
+path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/" + artist + "-" + title + ".csv"
 main_df.write_csv(path, separator=",")
+
+import glob
+import polars as pl
+
+dfs = glob.glob('WordByWordDF/*.csv')
+
+main_df_data_agg = {
+            "title": [],
+            "artist": [],
+            "date": [],
+            "word": [],
+            "language": []}
+
+main_df_agg = pl.DataFrame(main_df_data_agg, schema = {'title': str,
+                       'artist': str,
+                       'date': str,
+                       'word': str,
+                       'language': str})
+
+
+for df in dfs:
+    path = f'{df}'
+    df = pl.read_csv(path)
+    main_df_agg.extend(df)
+
+
+print(main_df_agg)
+
+path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/all_data.csv"
+main_df_agg.write_csv(path, separator=",")

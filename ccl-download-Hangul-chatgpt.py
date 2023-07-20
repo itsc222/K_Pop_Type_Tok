@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import requests
 from bs4 import BeautifulSoup
 import polars as pl
@@ -17,7 +19,7 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
 
 
 # Specify the URL of the webpage to scrape
-url = "https://colorcodedlyrics.com/2023/07/13/g-i-dle-i-do/"
+url = "https://colorcodedlyrics.com/2021/09/13/ateez-deja-vu/"
 
 # Send a GET request to the webpage
 response = requests.get(url)
@@ -89,7 +91,7 @@ og_title = og_title_tag['content']
 text = og_title
 
 # Split the string by spaces
-words = text.split(' – ')
+words = text.split(' - ')
 
 words = [word.split('Lyrics') for word in words]
 
@@ -155,5 +157,32 @@ for word in word_list:
 
 print(main_df)
 
-path = f"/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/{artist}-{title}.csv"
-main_df.write_csv(path, separator=",")
+import glob
+import polars as pl
+
+dfs = glob.glob('WordByWordDF/*.csv')
+
+main_df_data_agg = {
+            "title": [],
+            "artist": [],
+            "date": [],
+            "word": [],
+            "language": []}
+
+main_df_agg = pl.DataFrame(main_df_data_agg, schema = {'title': str,
+                       'artist': str,
+                       'date': str,
+                       'word': str,
+                       'language': str})
+
+
+for df in dfs:
+    path = f'{df}'
+    df = pl.read_csv(path)
+    main_df_agg.extend(df)
+
+
+print(main_df_agg)
+
+path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/all_data.csv"
+main_df_agg.write_csv(path, separator=",")

@@ -1,29 +1,209 @@
 name,popularity,followers,artist_uri
-BTS,89,67395091,spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX
-Stray Kids,82,11956080,spotify:artist:2dIgFjalVxs4ThymZ67YCE
-NewJeans,80,4047893,spotify:artist:6HvZYsbFfjnjFrWF950C9d
-TWICE,79,18244465,spotify:artist:7n2Ycct7Beij7Dj7meI4X0
-BLACKPINK,82,43274232,spotify:artist:41MozSoPIsD1dJM0CLPjZF
-TOMORROW X TOGETHER,76,8319741,spotify:artist:0ghlgldX5Dd6720Q3qFyQB
-FIFTY FIFTY,77,1028532,spotify:artist:4GJ6xDCF5jaUqD6avOuQT6
-SEVENTEEN,78,9706297,spotify:artist:7nqOGRxlXj7N2JYbgNEjYH
-(G)I-DLE,76,6492957,spotify:artist:2AfmfGFbe0A0WsTYm0SDTx
-ENHYPEN,76,6012609,spotify:artist:5t5FqBwTcgKTaWmfEbwQY9
-ATEEZ,72,3012794,spotify:artist:68KmkJeZGfwe1OUaivBa2L
-LE SSERAFIM,76,2597490,spotify:artist:4SpbR6yFEvexJuaBpgAU5p
-EXO,74,9694748,spotify:artist:3cjEqqelV9zb4BYE3qDQ4O
-IVE,75,2472404,spotify:artist:6RHTUrRF63xao58xh9FXYJ
-aespa,73,3405666,spotify:artist:6YVMFz59CuY7ngCxTxjpxE
-Red Velvet,69,8563829,spotify:artist:1z4g3DjTBBZKhvAroFlhOM
-NCT DREAM,73,6884522,spotify:artist:1gBUSTR3TyDdTVFIaQnc02
-ITZY,68,5612350,spotify:artist:2KC9Qb60EaY0kW4eH68vr3
-XG,66,686245,spotify:artist:0LOK81e9H5lr61HlGGHqwA
-NCT 127,66,6902390,spotify:artist:7f4ignuCJhLXfZ9giKT7rH
-SHINee,65,3036564,spotify:artist:2hRQKC0gqlZGPrmUKbcchR
-NMIXX,67,1685169,spotify:artist:28ot3wh4oNmoFOdVajibBl
-STAYC,62,1390050,spotify:artist:01XYiBYaoMJcNhPokrg0l0
-P1Harmony,60,767628,spotify:artist:3JjvsPeGMbDJqsphe2z8xU
-MONSTA X,62,5095735,spotify:artist:4TnGh5PKbSjpYqpIdlW5nz
-K/DA,62,2046502,spotify:artist:4gOc8TsQed9eqnqJct2c5v
-Dreamcatcher,60,1231046,spotify:artist:5V1qsQHdXNm4ZEZHWvFnqQ
-MAMAMOO,62,6963725,spotify:artist:0XATRDCYuuGhk0oE7C0o5G
+NewJeans,80,4069057,spotify:artist:6HvZYsbFfjnjFrWF950C9d
+TWICE,79,18255717,spotify:artist:7n2Ycct7Beij7Dj7meI4X0
+BLACKPINK,82,43311140,spotify:artist:41MozSoPIsD1dJM0CLPjZF
+TOMORROW X TOGETHER,76,8324879,spotify:artist:0ghlgldX5Dd6720Q3qFyQB
+FIFTY FIFTY,77,1032238,spotify:artist:4GJ6xDCF5jaUqD6avOuQT6
+SEVENTEEN,78,9714730,spotify:artist:7nqOGRxlXj7N2JYbgNEjYH
+(G)I-DLE,76,6506982,spotify:artist:2AfmfGFbe0A0WsTYm0SDTx
+ENHYPEN,76,6021739,spotify:artist:5t5FqBwTcgKTaWmfEbwQY9
+ATEEZ,72,3015640,spotify:artist:68KmkJeZGfwe1OUaivBa2L
+LE SSERAFIM,76,2604976,spotify:artist:4SpbR6yFEvexJuaBpgAU5p
+EXO,74,9697191,spotify:artist:3cjEqqelV9zb4BYE3qDQ4O
+IVE,75,2477561,spotify:artist:6RHTUrRF63xao58xh9FXYJ
+aespa,72,3409994,spotify:artist:6YVMFz59CuY7ngCxTxjpxE
+Red Velvet,69,8567224,spotify:artist:1z4g3DjTBBZKhvAroFlhOM
+NCT DREAM,73,6892829,spotify:artist:1gBUSTR3TyDdTVFIaQnc02
+ITZY,68,5615591,spotify:artist:2KC9Qb60EaY0kW4eH68vr3
+XG,66,687909,spotify:artist:0LOK81e9H5lr61HlGGHqwA
+NMIXX,67,1689025,spotify:artist:28ot3wh4oNmoFOdVajibBl
+NCT 127,66,6906365,spotify:artist:7f4ignuCJhLXfZ9giKT7rH
+SHINee,65,3037727,spotify:artist:2hRQKC0gqlZGPrmUKbcchR
+STAYC,62,1391473,spotify:artist:01XYiBYaoMJcNhPokrg0l0
+P1Harmony,60,768860,spotify:artist:3JjvsPeGMbDJqsphe2z8xU
+MONSTA X,62,5097455,spotify:artist:4TnGh5PKbSjpYqpIdlW5nz
+K/DA,62,2047923,spotify:artist:4gOc8TsQed9eqnqJct2c5v
+Dreamcatcher,60,1231458,spotify:artist:5V1qsQHdXNm4ZEZHWvFnqQ
+MAMAMOO,62,6967601,spotify:artist:0XATRDCYuuGhk0oE7C0o5G
+fromis_9,58,1086530,spotify:artist:24nUVBIlCGi4twz4nYxJum
+LOONA,58,2402670,spotify:artist:52zMTJCKluDlFwMQWmccY7
+Girls' Generation,61,2446365,spotify:artist:0Sadg1vgvaPqGTOjxu0N6c
+BIGBANG,62,5144230,spotify:artist:4Kxlr1PRlDKEB0ekOCyHgX
+NCT U,60,4076749,spotify:artist:3paGCCtX1Xr4Gx53mSeZuQ
+The Rose,60,2244507,spotify:artist:5na1LmEmK2VzNLje9snJYW
+DAY6,61,3150034,spotify:artist:5TnQc2N1iKlFjYD7CPGvFc
+GOT7,58,6650838,spotify:artist:6nfDaffa50mKtEOwR8g4df
+TREASURE,67,2885017,spotify:artist:3KonOYiLsU53m4yT7gNotP
+NCT DOJAEJUNG,58,203177,spotify:artist:0W0w607z3JEA1vXLz9FVGw
+Wonder Girls,55,752448,spotify:artist:3Cv2vi3WTl8VZOTdrBkKdM
+THE BOYZ,57,2594014,spotify:artist:0CmvFWTX9zmMNCUi6fHtAx
+IZ*ONE,59,1874351,spotify:artist:5r1tUTxVSgvBHnoDuDODPH
+EVERGLOW,57,1832698,spotify:artist:3ZZzT0naD25RhY2uZvIKkJ
+iKON,59,3509563,spotify:artist:5qRSs6mvI17zrkJpOHkCoM
+Xdinary Heroes,56,731580,spotify:artist:1khChLj7REGqjM043PlYyn
+GFRIEND,57,1538477,spotify:artist:0qlWcS66ohOIi0M8JZwPft
+tripleS,53,204477,spotify:artist:5Z71xE9prhpHrqL5thVMyK
+2NE1,57,2448446,spotify:artist:1l0mKo96Jh9HVYONcRl3Yp
+ONEUS,52,868162,spotify:artist:3CVYSpM7nfHFG5qCTW7Ht9
+NCT,53,5989423,spotify:artist:48eO052eSDcn8aTxiv6QaG
+PENTAGON,53,2180183,spotify:artist:1wKpMkucynaTfG8lyPprYV
+SUPER JUNIOR,56,2397490,spotify:artist:6gzXCdfYfFe5XKhPKkYqxV
+ASTRO,56,1921640,spotify:artist:4pz4uzOMpJQyV8UTsDy4H8
+f(x),50,1289823,spotify:artist:3wRA5UYoo08BBKJnzyKkpF
+BTOB,55,1503006,spotify:artist:2hcsKca6hCfFMwwdbFvenJ
+Apink,52,1218840,spotify:artist:2uWcrwgWmZcQc3IPBs3tfU
+OH MY GIRL,52,1731466,spotify:artist:2019zR22qK2RBvCqtudBaI
+WINNER,52,2550387,spotify:artist:5DuzBeOgFwViFcv00Q5PFb
+xikers,51,177649,spotify:artist:6QHP8St0MzfNDqjKpwtMht
+BOYS PLANET,54,120429,spotify:artist:49pGKUCSjzaCfv8gdTWG98
+WJSN,49,876652,spotify:artist:6hhqsQZhtp9hfaZhSd0VSD
+MOMOLAND,52,3948056,spotify:artist:5RR0MLwcjc87wjSw2JYdwx
+2PM,51,783881,spotify:artist:5iRPbkcPmqAFFwDUj6ywVS
+EXID,50,1528399,spotify:artist:1xs6WFotNQSXweo0GXrS0O
+AOA,48,720596,spotify:artist:54gWVQFHf8IIqbjxAoOarN
+OnlyOneOf,44,338730,spotify:artist:0iQGSzpJ0G0lsugv8jsJHd
+SISTAR,50,995604,spotify:artist:2wTLheTmMcFCA4hdY8hZJP
+SF9,49,1719459,spotify:artist:7LOmc7gyMVMOWF8qwEdn2X
+EXO-K,51,1938653,spotify:artist:6wPBIyIIMxoqgux29bGF8I
+CLC,48,1256628,spotify:artist:6QyO41KctzGc70mVaVnXQO
+TVXQ!,50,823898,spotify:artist:6nVMMEywS5Y4tsHPKx1nIo
+MAVE:,50,108461,spotify:artist:2ec7y2L98sHDYFylr7KqEx
+THE NEW SIX,48,133181,spotify:artist:0DRiXmEOc6dJ6Rug3xi4HZ
+Brave Girls,48,326416,spotify:artist:7t5H3uQv0Zw6cQUnSTF5BB
+EXO-CBX,50,2622906,spotify:artist:3Lz3vEN23Fw0hIelrYEzUD
+LOOΠΔ / ODD EYE CIRCLE,43,770189,spotify:artist:5KPaeBm0fVfCSZLydp9jdy
+8TURN,45,118724,spotify:artist:7tCg9aiVKZ5Cmhbfb7UoqM
+T-ARA,49,800276,spotify:artist:1R52cwGf75yTf7I3Q0Irf8
+KARA,49,556392,spotify:artist:7aZ221EQfonNG2lO9Hh192
+4Minute,47,1107684,spotify:artist:6cdC1cwqh3eJAXaxXJt2jv
+Wanna One,50,1832831,spotify:artist:2CvaqAMMsX576VBehaJ0Wx
+A.C.E,43,1376071,spotify:artist:25KT93FeotUTHC1dbLasxi
+INFINITE,48,898791,spotify:artist:1bkpTEmumLC3xc7HgMsttU
+Overdose,48,6853,spotify:artist:32jdgEsyvdXqUoReMyR0gl
+miss A,46,919892,spotify:artist:1BEohdSWSBggmO979tzRwW
+Beast,48,475366,spotify:artist:1Pr9gT0veB2tgcisQeIGoC
+VIXX,43,973822,spotify:artist:5BkB3rXc0qIdUtuEnhbK0A
+VICTON,44,913062,spotify:artist:0ziR2zN0NFcB4x1G3P8cW3
+Girl's Day,45,718902,spotify:artist:13kJgvU22LHMsJtGWLmx7W
+Cherry Bullet,43,382516,spotify:artist:3IJCdgkBZbieocLZ4e94GZ
+TRI.BE,43,254629,spotify:artist:6BgYuNomEs12UIrnxhWE9a
+AB6IX,44,545662,spotify:artist:4y0wFJ5jmCUNRLZfsw1I7g
+ONEWE,43,383656,spotify:artist:4D9foUQxTrsS0w2BeyCD16
+Weki Meki,42,994684,spotify:artist:5LWkv2hDbDwZL3zNwZYNPx
+I.O.I,45,1337751,spotify:artist:6RKnXXyprPjhBdCvL802Ku
+SHINHWA,42,296165,spotify:artist:0jVvkFPa6YbFXQ3Qmhita0
+B.A.P,43,758664,spotify:artist:6kxCoNfY6U1eP0Yc88phvk
+EPEX,42,190006,spotify:artist:4e2umhzNHTSeQnSCWPN0uT
+BLACKSWAN,43,113722,spotify:artist:2ujaWf015QoP7x1u20Yq5G
+PIXY,40,164957,spotify:artist:0CJkEzffVZLgav03xXeC9s
+EXO-SC,46,1199801,spotify:artist:6741jcSlgsv0M3B4ruIPS5
+Orange Caramel,40,316066,spotify:artist:2QHTtUsN6Q13w3QHdfRqsK
+NU'EST,43,1022341,spotify:artist:1iQfn1B8V25iQoolQakyAZ
+Brown Eyed Girls,40,262632,spotify:artist:2GEPtT5RDxrmdi0A4mbDi7
+CNBLUE,47,714919,spotify:artist:6dCz3spfpIvqqqsIoP6wXi
+VERIVERY,40,338461,spotify:artist:1fWUcRSok57yRm8gPKj1Fc
+TEEN TOP,43,398289,spotify:artist:3offPqpKAKmpQkIdWnjzkc
+MOONBIN&SANHA(ASTRO),44,160759,spotify:artist:2jrwm2knXPMawr5p8FuC2h
+SECRET NUMBER,49,221160,spotify:artist:7qxo9RTWfEoFKN7XGtNV6V
+KINGDOM,37,176123,spotify:artist:0p5Ot7c8cFHtS82hd1WBN3
+VAV,39,808615,spotify:artist:3riGN5iBVBk5naQxUDr5fk
+SS501,45,253382,spotify:artist:6rmMpoeu2SIV4OLURCOn2e
+ONF,41,623565,spotify:artist:0eEhOgZ2x6kv8kLz77WO7b
+APRIL,38,503968,spotify:artist:4cJ99wTjC60pXcfyISL9fa
+Golden Child,39,645100,spotify:artist:5zShiwTHlygdfsXj6eavTu
+B1A4,41,578941,spotify:artist:3sxWOFw4MSN54SIQ8np6iG
+TEMPEST,48,156305,spotify:artist:1iyFL3CRuKW7PXgPH4VxSP
+DKB,37,146509,spotify:artist:4DoedGw38ubJdAT1edFsIx
+After School,40,353175,spotify:artist:1loWI8jVk9btgJXHgqHXPD
+Say Yes!,45,4828,spotify:artist:7sPKpBhx7fwPp9wMGYvQJI
+Lovelyz,39,446340,spotify:artist:3g34PW5oNmDBxMVUTzx2XK
+H1-KEY,41,72867,spotify:artist:5GwQwY63I9hrUUFlQB8FYU
+S.E.S.,36,66421,spotify:artist:61HUG80Xma4rnXsqfZkzeM
+Rocket Punch,36,177806,spotify:artist:4hozqATxbpy9TwKWRT8QVO
+woo!ah!,38,194008,spotify:artist:7mgY992t7YTx6UELsoIMRa
+CLASS:y,39,131725,spotify:artist:3jcfHmXvjOgHzfyVE55GzZ
+GD X TAEYANG,40,343010,spotify:artist:3HJVw8aEtFqoc3raJVE8am
+NU'EST W,39,629034,spotify:artist:0gdWU9IX6LIiuPvXh95pas
+NATURE,39,195881,spotify:artist:5WUom9mTTEewPdUmI4qnQi
+En Butter,42,3850,spotify:artist:3X6XIt8zNXvrNzxb1R8TW5
+SUPER JUNIOR-D&E,42,664958,spotify:artist:3EfnKIG9827OXkcQQT7HEI
+U-KISS,39,370194,spotify:artist:2GB76Lm833jVI5kLvKEB7Z
+E'LAST,33,177159,spotify:artist:0NztgA9b1KEJLjLVqMwd9y
+BLITZERS,38,97956,spotify:artist:3Exoh42YMeqnUvYahAGgUE
+ALICE,34,242608,spotify:artist:1mgzY8CsK8lyJy96tT8bV5
+SISTAR19,38,195095,spotify:artist:5Q0U6ogBrMX2oxmxy5OTzU
+9MUSES,36,222820,spotify:artist:55tJwpPIz9BMrSLM45iEXX
+HIGHLIGHT,38,520115,spotify:artist:3T0fMfxYBU3q9oAUAdPIsr
+HELLOVENUS,35,264638,spotify:artist:3TW9U1f93tpGBsEtCSf7JG
+PRISTIN V,34,481857,spotify:artist:4zTNiArZgV1SKWATSFshVI
+CSR,39,53509,spotify:artist:06MX3Ecb8PHyNFmq8irTWC
+LOONA/yyxy,33,266779,spotify:artist:5JPKwLsHGaPIlxqHiF29e4
+DIA,34,206440,spotify:artist:5Pcx98OUnL52aGZRRQx5v8
+0WAVE,35,16195,spotify:artist:1nxCRfWuzM4GSCVfrqtlxz
+Apink CHOBOM,33,19357,spotify:artist:1eDD6vNEyVQXGev7af156d
+TAN,33,43377,spotify:artist:34Ecdzh8yGKt2YvPG37PKu
+JUST B,33,165423,spotify:artist:2f0bPttugNpkg34HIxBIWe
+Jus2,35,376667,spotify:artist:1pXX6uuufA0Zrk4Ksuh4nv
+LADIES' CODE,32,161232,spotify:artist:4epPY1AW9lQeVUM1XaFiwi
+LOOΠΔ 1/3,31,255595,spotify:artist:4u9YxYzCjpMjnMcwNu9fzy
+Lapillus,39,83046,spotify:artist:7bcMJG1TkYFFD9Fit3STLJ
+NINTYSIX,39,3631,spotify:artist:6PR5lyCpN2aFKgHUvY9B3O
+Girls' Generation-Oh!GG,37,200958,spotify:artist:1foL9hLC9M6U94dINtOYfb
+LIGHTSUM,33,118411,spotify:artist:57HNdw2ObRmfwWHG8Xhs8t
+SECHSKIES,33,146116,spotify:artist:6uRyNreOHUvWPNGnKfIo27
+Girls' Generation-TTS,36,605082,spotify:artist:7AKHnZVqwXYuUwWJ8UGL5q
+MBLAQ,36,302997,spotify:artist:14f1WN9TUDVBK4sHUStmLG
+NINE.i,34,35423,spotify:artist:4e8UtPYfVPBzWO4PY8CZye
+DKZ,33,89189,spotify:artist:31eyTcfjAke5hFX3az3nRE
+DreamNote,31,98366,spotify:artist:3ILvL0HM0cST4iR8RzQh2V
+PRISTIN,32,609821,spotify:artist:6VAphrHp0Oc88qg9BDaH9D
+Ciipher,37,78567,spotify:artist:18VvNIaKQgZXhSBnu7p5z7
+BVNDIT,32,156918,spotify:artist:5dEBuZjTtE68uDgCs23Kuv
+Gguggugi,39,3244,spotify:artist:0SLGKxtZbiQFfJGtJ8TDTo
+LABOUM,33,169299,spotify:artist:4iO5uKMUphLqQ20TfrdZx3
+gugudan,32,482272,spotify:artist:0h7XZWgoxlY49uSUj7MVRY
+HIGH4,35,62349,spotify:artist:3cpG0SJLIJ1qpQfjmlWlzo
+LIMELIGHT,32,42938,spotify:artist:1mDDvUPSs2dSr4QKAQmOql
+Fin.K.L,29,32179,spotify:artist:2aRLyjYp7WPr4EkjkI1gvS
+CRAXY,30,34942,spotify:artist:3C13AlJZ4QWHSruAWe9VPI
+YOUNITE,33,51404,spotify:artist:4l4eMvpA4K7X02j08cbkNV
+Secret,33,201119,spotify:artist:503DjcVO5Ku1NgLPhVuNg7
+1TEAM,26,128026,spotify:artist:3u9xBa2fe8b9jPf5JYFRH3
+WJSN Chocome,31,87946,spotify:artist:5VyqN5hNo0TbYF0ICU77nn
+cignature,30,139365,spotify:artist:5x9WawpXGR82PWDFk9CKYQ
+VROMANCE,35,51064,spotify:artist:5YPW3OmiqnqnQaFjloAvA7
+KHAN,30,25459,spotify:artist:2dixWDh9f2COEfikojSd39
+FIESTAR,30,157253,spotify:artist:3IVjXrnR0npv1LY24kQSzd
+GHOST9,28,140899,spotify:artist:7f953Uuid7Xrd0nXQ3V3s1
+TRENDZ,30,67369,spotify:artist:6Bmr9e9x44iib7equMj5Qj
+Dalshabet,30,177030,spotify:artist:10xsuRNvidaOLxWd3fRIel
+THE7,29,24637,spotify:artist:76P1bgqm0Ign9ZDfSjBSbc
+ATBO,31,38173,spotify:artist:3bwO3gNZVmHwaBttv739g7
+Block B - BASTARZ,30,252134,spotify:artist:70ptvBQye3QMlbuTKrF1qb
+Stellar,27,283542,spotify:artist:1rTwKjYcA7diHAD2c8ZozT
+MIRAE,30,161441,spotify:artist:3cI5n4TdsnqzKxYPkQLs4b
+VANNER,30,44120,spotify:artist:05pkCt3DQY5ZC41u7WMk5D
+TO1,30,95838,spotify:artist:405HlkQ0VXP4NUYaGxsgsg
+BOYFRIEND,33,329037,spotify:artist:2Pw8E6zZoeuksVWtyZPnzd
+UP10TION,29,505473,spotify:artist:2LjaeuGS0ubYXZfNihGp9y
+KNK,28,289677,spotify:artist:5zx2slDKDXNn1e6779RzPd
+Crayon Pop,31,159285,spotify:artist:0ODX6aegsZkBmBeMA5qqwi
+PRODUCE 48,34,428407,spotify:artist:5ORE0ElD7HiONogJZzhKrS
+ICHILLIN',29,41552,spotify:artist:5357DGet3KsoJNwVkV7qvy
+PATTERN,20,5876,spotify:artist:4elUOMiZMJjFKBv13kA0vg
+god,28,33484,spotify:artist:1nTCpd63NkuGGpCIbo4Ywl
+RAINBOW,30,24788,spotify:artist:7xDyxRXgFgOZhdtLtkYR1y
+PinkFantasy,28,93119,spotify:artist:5syu5kN4a5f4rgMCRGlnZp
+WJSN THE BLACK,27,54135,spotify:artist:0M3eRYg8ULjCtLFvhc5Orb
+BAE173,27,88820,spotify:artist:60315n11JElel8KhdHg8jM
+BESTie,26,161877,spotify:artist:1HiZjIv6iLp9cs5vX0AJKo
+Rania,26,69945,spotify:artist:5sUKi0QlHVxvsCzmrhJsFO
+SUPER JUNIOR-K.R.Y.,35,272124,spotify:artist:5Kdp1Iq26eCz7XbPxOgt7F
+XODIAC,44,43130,spotify:artist:1Yhs3H3tkZhk4mSQgzECWb
+UNIQ,28,129336,spotify:artist:0ewnmx72rVozQtvslLl0t1
+BDC,26,118945,spotify:artist:3FgebbL1Lp8wynkXgtscfd
+ToppDogg,25,152880,spotify:artist:03Ejz4OkKzGnTRKZE3KwRN
+ILY:1,26,37660,spotify:artist:3FvFhUWP00xtwBrHtby3v8
+AIMERS,26,25122,spotify:artist:4U2eZzOZsobt9JHp0znP1L
+XEED,23,26612,spotify:artist:6N6p7pQeB9kjLhvvS3L5j1
+BTS,88,67432958,spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX
