@@ -13,30 +13,28 @@ import os
 
 # Specify the URL of the webpage to scrape
 
-url = ['https://colorcodedlyrics.com/2022/10/11/mamamoo-illella-ilnaella/',
-       'https://colorcodedlyrics.com/2021/09/20/mamamoo-mamamu-mumumumuch-haneul-ddang-badamankeum/',
-       'https://colorcodedlyrics.com/2021/06/02/mamamoo-mamamu-where-are-we-now/',
-       'https://colorcodedlyrics.com/2020/10/20/mamamoo-dingga-dinggadingga/',
-       'https://colorcodedlyrics.com/2020/11/03/mamamoo-mamamu-aya/',
-       'https://colorcodedlyrics.com/2019/11/14/mamamoo-hip/',
-       'https://colorcodedlyrics.com/2019/03/14/mamamoo-gogobebe/',
-       'https://colorcodedlyrics.com/2018/11/29/mamamoo-wind-flower/',
-       'https://colorcodedlyrics.com/2018/07/16/mamamoo-egotistic-neona-hae/',
-       'https://colorcodedlyrics.com/2018/07/01/mamamoo-rainy-season-jangma/',
-       'https://colorcodedlyrics.com/2018/03/08/mamamoo-starry-night-byeoli-bichnaneun-bam/',
-       'https://colorcodedlyrics.com/2018/01/04/mamamoo-paint-chilhaejwo/',
-       'https://colorcodedlyrics.com/2017/06/22/mamamoo-yes-nalo-malhal-geos-gateumyeon/',
-       'https://colorcodedlyrics.com/2016/11/06/mamamoo-decalcomanie/',
-       'https://colorcodedlyrics.com/2016/09/20/mamamoo-new-york/',
-       'https://colorcodedlyrics.com/2016/02/25/mamamoo-you-re-the-best-neon-is-mwondeul/',
-       'https://colorcodedlyrics.com/2016/02/13/mamamoo-taller-than-you-1cmui-jajonsim/',
-       'https://colorcodedlyrics.com/2016/01/30/mamamoo-mamamu-i-miss-you/',
-       'https://colorcodedlyrics.com/2015/06/18/mamamoo-mamamu-um-oh-ah-yeh-eumoaye/',
-       'https://colorcodedlyrics.com/2014/11/21/mamamoo-piano-man/',
-       'https://colorcodedlyrics.com/2014/06/18/mamamoo-mr-ambiguous/',
-       'https://colorcodedlyrics.com/2014/07/06/mamamoo-and-geeks-hihihaheho/',
-       'https://colorcodedlyrics.com/2014/04/25/mamamoo-k-will-peppermint-chocolate-feat-whee-sung/',
-       'https://colorcodedlyrics.com/2014/04/25/mamamoo-don-t-be-happy-feat-bumkey/'
+url = ['https://colorcodedlyrics.com/2021/04/19/day6-you-make-me/',
+       'https://colorcodedlyrics.com/2020/05/11/day6-zombie/',
+       'https://colorcodedlyrics.com/2019/10/22/day6-sweet-chaos/',
+       'https://colorcodedlyrics.com/2019/07/15/day6-time-of-our-life-han-peijiga-doel-su-issge/',
+       'https://colorcodedlyrics.com/2018/12/10/day6-days-gone-haengboghaessdeon-naldeulieossda/',
+       'https://colorcodedlyrics.com/2017/12/05/day6-like-johahabnida/',
+       'https://colorcodedlyrics.com/2017/12/05/day6-like-johahabnida/',
+       'https://colorcodedlyrics.com/2018/06/26/day6-shoot-me/',
+       'https://colorcodedlyrics.com/2018/09/14/day6-beautiful-feeling/',
+       'https://colorcodedlyrics.com/2017/11/05/day6-alone-honjaya/',
+       'https://colorcodedlyrics.com/2017/09/28/day6-love-someone-geuleohdeolagoyo/',
+       'https://colorcodedlyrics.com/2017/09/05/day6-i-loved-you/',
+       'https://colorcodedlyrics.com/2017/07/05/day6-hi-hello/',
+       'https://colorcodedlyrics.com/2017/08/06/day6-can-joheungeol-mwo-eoddeoghae/',
+       'https://colorcodedlyrics.com/2017/06/06/day6-smile-bandeusi-usneunda/',
+       'https://colorcodedlyrics.com/2017/05/07/day6-dance-dance/',
+       'https://colorcodedlyrics.com/2017/04/05/day6-m-serious-jangnan-aninde/',
+       'https://colorcodedlyrics.com/2017/03/05/day6-can-say-eoddeohge-malhae/',
+       'https://colorcodedlyrics.com/2017/02/05/day6-beautiful-yebbeosseo/',
+       'https://colorcodedlyrics.com/2017/01/05/day6-wait-wae/',
+       'https://colorcodedlyrics.com/2016/03/29/day6-letting-go-noha-noha-noha/',
+       'https://colorcodedlyrics.com/2015/09/06/day6-congratulations/'
        ]
 
 for url in url:
@@ -297,12 +295,14 @@ for url in url:
                                 'language': str})
 
                 main_df.extend(df)
-        except (IndexError, KeyError):
+        except (IndexError, KeyError, NameError, AttributeError):
             print("no can do, boss. Maybe try a different song?")
             pass
-
-    path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/" + artist + "-" + title + ".csv"
-    main_df.write_csv(path, separator=",")
+    try:    
+        path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/" + artist + "-" + title + ".csv"
+        main_df.write_csv(path, separator=",")
+    except (NameError):
+        pass
 
 dfs = glob.glob('WordByWordDF/*.csv')
 
