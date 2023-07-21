@@ -13,29 +13,10 @@ import os
 
 # Specify the URL of the webpage to scrape
 
-url = ['https://colorcodedlyrics.com/2021/04/19/day6-you-make-me/',
-       'https://colorcodedlyrics.com/2020/05/11/day6-zombie/',
-       'https://colorcodedlyrics.com/2019/10/22/day6-sweet-chaos/',
-       'https://colorcodedlyrics.com/2019/07/15/day6-time-of-our-life-han-peijiga-doel-su-issge/',
-       'https://colorcodedlyrics.com/2018/12/10/day6-days-gone-haengboghaessdeon-naldeulieossda/',
-       'https://colorcodedlyrics.com/2017/12/05/day6-like-johahabnida/',
-       'https://colorcodedlyrics.com/2017/12/05/day6-like-johahabnida/',
-       'https://colorcodedlyrics.com/2018/06/26/day6-shoot-me/',
-       'https://colorcodedlyrics.com/2018/09/14/day6-beautiful-feeling/',
-       'https://colorcodedlyrics.com/2017/11/05/day6-alone-honjaya/',
-       'https://colorcodedlyrics.com/2017/09/28/day6-love-someone-geuleohdeolagoyo/',
-       'https://colorcodedlyrics.com/2017/09/05/day6-i-loved-you/',
-       'https://colorcodedlyrics.com/2017/07/05/day6-hi-hello/',
-       'https://colorcodedlyrics.com/2017/08/06/day6-can-joheungeol-mwo-eoddeoghae/',
-       'https://colorcodedlyrics.com/2017/06/06/day6-smile-bandeusi-usneunda/',
-       'https://colorcodedlyrics.com/2017/05/07/day6-dance-dance/',
-       'https://colorcodedlyrics.com/2017/04/05/day6-m-serious-jangnan-aninde/',
-       'https://colorcodedlyrics.com/2017/03/05/day6-can-say-eoddeohge-malhae/',
-       'https://colorcodedlyrics.com/2017/02/05/day6-beautiful-yebbeosseo/',
-       'https://colorcodedlyrics.com/2017/01/05/day6-wait-wae/',
-       'https://colorcodedlyrics.com/2016/03/29/day6-letting-go-noha-noha-noha/',
-       'https://colorcodedlyrics.com/2015/09/06/day6-congratulations/'
-       ]
+url = ['https://colorcodedlyrics.com/2018/10/29/iz-one-la-vie-en-rose-labianglojeu/',
+       'https://colorcodedlyrics.com/2019/04/01/iz-one-violetta-biolleta/',
+       'https://colorcodedlyrics.com/2020/06/15/iz-one-secret-story-of-the-swan/',
+       'https://colorcodedlyrics.com/2020/12/07/iz-one-panorama/']
 
 for url in url:
     #Initialize main data table
