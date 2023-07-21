@@ -13,29 +13,27 @@ import os
 
 # Specify the URL of the webpage to scrape
 
-url = ["https://colorcodedlyrics.com/2023/06/26/shinee-hard/", 
-       'https://colorcodedlyrics.com/2021/04/12/shinee-atlantis/', 
-       'https://colorcodedlyrics.com/2021/02/22/shinee-don-t-call-me/',
-       'https://colorcodedlyrics.com/2018/09/10/shinee-countless-sel-su-eomneun/',
-       'https://colorcodedlyrics.com/2018/06/25/shinee-page-nega-namgyeodun-mal/',
-       'https://colorcodedlyrics.com/2018/06/11/shinee-i-want-you/',
-       'https://colorcodedlyrics.com/2018/05/28/shinee-good-evening-delileo-ga/',
-       'https://colorcodedlyrics.com/2016/11/14/shinee-tell-me-what-to-do/',
-       'https://colorcodedlyrics.com/2015/08/02/shinee-married-to-the-music/',
-       'https://colorcodedlyrics.com/2016/10/04/shinee-1-1/',
-       'https://colorcodedlyrics.com/2015/05/19/shinee-view/',
-       'https://colorcodedlyrics.com/2013/10/10/shinee-everybody/',
-       'https://colorcodedlyrics.com/2013/04/25/shinee-why-so-serious/',
-       'https://colorcodedlyrics.com/2013/02/18/shinee-syaini-dream-girl/',
-       'https://colorcodedlyrics.com/2012/03/18/shinee-sherlock-syeollog-clue-note/',
-       'https://colorcodedlyrics.com/2010/09/30/931/',
-       'https://colorcodedlyrics.com/2010/07/19/shinee-lucifer/',
-       'https://colorcodedlyrics.com/2011/05/09/shinee-jo-jo-cc-lyrics/',
-       'https://colorcodedlyrics.com/2012/03/26/shinee_syaini_-_ring_ding_dong_cc_lyrics/',
-       'https://colorcodedlyrics.com/2012/11/18/shinee-syaini-juliette-jullies/',
-       'https://colorcodedlyrics.com/2010/10/18/shinee-a_mi_go-cc-lyrics/',
-       'https://colorcodedlyrics.com/2012/04/25/shinee_syaini_-_love_like_oxygen_sanso_gateun_neo_cc_lyrics/',
-       'https://colorcodedlyrics.com/2012/07/09/shinee-syaini-replay-nunan-neomu-yebbeo-2/'
+url = ['https://colorcodedlyrics.com/2023/01/09/monsta-x-beautiful-liar/',
+       'https://colorcodedlyrics.com/2022/04/26/monsta-x-love/',
+       'https://colorcodedlyrics.com/2021/11/18/monsta-x-rush-hour/',
+       'https://colorcodedlyrics.com/2021/06/01/monsta-x-gambler/',
+       'https://colorcodedlyrics.com/2020/11/01/monsta-x-love-killa/',
+       'https://colorcodedlyrics.com/2020/05/26/monsta-x-fantasia/',
+       'https://colorcodedlyrics.com/2020/05/26/monsta-x-fantasia/',
+       'https://colorcodedlyrics.com/2019/10/28/monsta-x-follow/',
+       'https://colorcodedlyrics.com/2019/10/22/monsta-x-find-you/',
+       'https://colorcodedlyrics.com/2019/02/18/monsta-x-alligator/',
+       'https://colorcodedlyrics.com/2018/10/22/monsta-x-shoot/',
+       'https://colorcodedlyrics.com/2018/03/26/monsta-x-jealousy/',
+       'https://colorcodedlyrics.com/2017/12/18/monsta-x-lonely-christmas-geunomui-keuliseumaseu/',
+       'https://colorcodedlyrics.com/2017/11/07/monsta-x-dramarama/',
+       'https://colorcodedlyrics.com/2017/06/19/monsta-x-shine-forever/',
+       'https://colorcodedlyrics.com/2017/03/21/monsta-x-beautiful-aleumdawo/',
+       'https://colorcodedlyrics.com/2016/10/03/monsta-x-fighter/',
+       'https://colorcodedlyrics.com/2016/05/18/monsta-x-all-in-georeo/',
+       'https://colorcodedlyrics.com/2015/09/10/monsta-x-hero/',
+       'https://colorcodedlyrics.com/2015/09/08/monsta-x-monseutaegseu-rush-sinsoghi/',
+       'https://colorcodedlyrics.com/2015/05/14/monsta-x-monseutaegseu-trespass-mudanchimib/'
        ]
 
 for url in url:
@@ -319,6 +317,7 @@ main_df_agg = pl.DataFrame(main_df_data_agg, schema = {'title': str,
                         'word': str,
                         'language': str})
 
+#remove dfs that have no lyrics inside
 
 def is_single_row_csv(df):
     with open(df, "r") as file:
@@ -334,6 +333,7 @@ def is_single_row_csv(df):
 for df in dfs:
     is_single_row_csv(df)
 
+dfs = glob.glob('WordByWordDF/*.csv')
 
 for df in dfs:
         path = f'{df}'
@@ -341,6 +341,8 @@ for df in dfs:
         main_df_agg.extend(df)
 
 print(main_df_agg)
+
+#Write new comprehensive DF
 
 path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/all_data.csv"
 main_df_agg.write_csv(path, separator=",")
