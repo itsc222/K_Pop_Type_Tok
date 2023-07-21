@@ -1,26 +1,33 @@
 # -*- coding: utf-8 -*-
+#Import packages
 
 import requests
 from bs4 import BeautifulSoup
 import polars as pl
+import string
+from datetime import datetime
+import langid
+import glob
+
+#Initialize main data table
 
 main_df_data = {
-            "title": [],
-            "artist": [],
-            "date": [],
-            "word": [],
-            "language": []}
-main_df = pl.DataFrame(main_df_data, schema = {'title': str,
-                       'artist': str,
-                       'date': str,
-                       'word': str,
-                       'language': str})
-
-
+    "title": [],
+    "artist": [],
+    "date": [],
+    "word": [],
+    "language": []
+}
+main_df = pl.DataFrame(main_df_data, 
+                       schema={'title': str, 
+                               'artist': str, 
+                               'date': str, 
+                               'word': str, 
+                               'language': str})
 
 # Specify the URL of the webpage to scrape
 
-url = "https://colorcodedlyrics.com/2021/10/12/nct-127-gimme-gimme/"
+url = "https://colorcodedlyrics.com/2023/05/01/le-sserafim-unforgiven-feat-nile-rodgers/"
 
 # Send a GET request to the webpage
 response = requests.get(url)
@@ -44,7 +51,6 @@ else:
 
 #set indexes to extract only set of Hangul lyrics
 
-
 index_start = lyrics.index("Hangul")
 index_end = lyrics.index("Translation")
 # print(index_start)
@@ -54,8 +60,6 @@ index_end = lyrics.index("Translation")
 hangul_lyrics = (lyrics[index_start + 1:index_end])
 
 # print(hangul_lyrics)
-
-import string
 
 def text_to_list(text):
     # Remove punctuation and convert the text to a list
@@ -112,8 +116,6 @@ published_time = published_time_tag['content']
 # Print the scraped article:published_time
 # print('Published Time:', published_time)
 
-from datetime import datetime
-
 # Input datetime string
 datetime_str = published_time
 
@@ -132,38 +134,26 @@ print('Title:', title)
 print('Artist:', artist)
 print('Lyrics:', final_list)
 
-import langid
-
 word_list = final_list
-
 langid.set_languages(['en', 'ko'])
-
 
 for word in word_list:
     lang, confidence = langid.classify(word)
     # print(f"Word: {word} - Language: {lang} - Confidence: {confidence}")
     data = {
-            "title": title,
-            "artist": artist,
-            "date": date,
-            "word": word,
-            "language": lang}
-    
-    df = pl.DataFrame(data, schema = {'title': str,
-                       'artist': str,
-                       'date': str,
-                       'word': str,
-                       'language': str})
-
+        "title": title,
+        "artist": artist,
+        "date": date,
+        "word": word,
+        "language": lang
+    }
+    df = pl.DataFrame(data, schema={'title': str, 'artist': str, 'date': str, 'word': str, 'language': str})
     main_df.extend(df)
 
 print(main_df)
 
 path = "/Users/ischneid/Code Studio/K-Pop-Type-Tok/K_Pop_Type_Tok/WordByWordDF/" + artist + "-" + title + ".csv"
 main_df.write_csv(path, separator=",")
-
-import glob
-import polars as pl
 
 dfs = glob.glob('WordByWordDF/*.csv')
 
@@ -185,7 +175,6 @@ for df in dfs:
     path = f'{df}'
     df = pl.read_csv(path)
     main_df_agg.extend(df)
-
 
 print(main_df_agg)
 

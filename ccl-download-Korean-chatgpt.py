@@ -17,7 +17,7 @@ main_df = pl.DataFrame(main_df_data, schema = {'title': str,
                        'language': str})
 
 
-url = "https://colorcodedlyrics.com/2021/10/12/nct-127-gimme-gimme/"
+url = "https://colorcodedlyrics.com/2017/07/21/exo-ko-ko-bop/"
 
 # print(url)
 
@@ -66,10 +66,7 @@ def remove_punctuation_and_quotes(text):
     text = text.translate(translator)
     return text.lower()
 
-
-final_list = []
-for word in word_list:
-    final_list.append(remove_punctuation_and_quotes(word))
+final_list = [remove_punctuation_and_quotes(word) for word in word_list[1:]]
                       
 print(final_list)
 
