@@ -13,10 +13,12 @@ import os
 
 # Specify the URL of the webpage to scrape
 
-url = ['https://colorcodedlyrics.com/2018/10/29/iz-one-la-vie-en-rose-labianglojeu/',
-       'https://colorcodedlyrics.com/2019/04/01/iz-one-violetta-biolleta/',
-       'https://colorcodedlyrics.com/2020/06/15/iz-one-secret-story-of-the-swan/',
-       'https://colorcodedlyrics.com/2020/12/07/iz-one-panorama/']
+url = ['https://colorcodedlyrics.com/2021/12/01/everglow-pirate/',
+       'https://colorcodedlyrics.com/2021/05/25/everglow-first/',
+       'https://colorcodedlyrics.com/2020/09/21/everglow-la-di-da/',
+       'https://colorcodedlyrics.com/2020/02/03/everglow-dun-dun/',
+       'https://colorcodedlyrics.com/2019/08/19/everglow-adios/',
+       'https://colorcodedlyrics.com/2019/03/18/everglow-bon-bon-chocolat/']
 
 for url in url:
     #Initialize main data table
