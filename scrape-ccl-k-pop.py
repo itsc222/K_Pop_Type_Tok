@@ -13,12 +13,23 @@ import os
 
 # Specify the URL of the webpage to scrape
 
-url = ['https://colorcodedlyrics.com/2021/12/01/everglow-pirate/',
-       'https://colorcodedlyrics.com/2021/05/25/everglow-first/',
-       'https://colorcodedlyrics.com/2020/09/21/everglow-la-di-da/',
-       'https://colorcodedlyrics.com/2020/02/03/everglow-dun-dun/',
-       'https://colorcodedlyrics.com/2019/08/19/everglow-adios/',
-       'https://colorcodedlyrics.com/2019/03/18/everglow-bon-bon-chocolat/']
+url = ['https://colorcodedlyrics.com/2020/11/09/gfriend-yeojachingu-mago/',
+       'https://colorcodedlyrics.com/2020/07/13/gfriend-yeojachingu-apple/',
+       'https://colorcodedlyrics.com/2020/02/03/gfriend-yeojachingu-crossroads-gyochalo/',
+       'https://colorcodedlyrics.com/2019/11/21/gfriend-fallin-light/',
+       'https://colorcodedlyrics.com/2019/07/01/gfriend-fever/',
+       'https://colorcodedlyrics.com/2019/03/12/gfriend-flower/',
+       'https://colorcodedlyrics.com/2019/01/14/gfriend-yeojachingu-sunrise-haeya/',
+       'https://colorcodedlyrics.com/2018/09/21/gfriend-memoria/',
+       'https://colorcodedlyrics.com/2018/07/19/gfriend-sunny-summer/',
+       'https://colorcodedlyrics.com/2018/04/30/gfriend-yeojachangu-time-moon-night-bam/',
+       'https://colorcodedlyrics.com/2017/09/13/gfriend-yeojachingu-summer-rain-yeoleumbi/',
+       'https://colorcodedlyrics.com/2017/08/01/gfriend-yeojachingu-love-whisper-gwileul-giulimyeon/',
+       'https://colorcodedlyrics.com/2017/03/05/gfriend-fingertip/',
+       'https://colorcodedlyrics.com/2016/07/10/gfriend-yeojachingu-navillera-neo-geuligo-na/',
+       'https://colorcodedlyrics.com/2016/01/24/gfriend-rough-siganeul-dallyeoseo/',
+       'https://colorcodedlyrics.com/2015/07/22/gfriend-me-gustas-tu-oneulbuteo-ulineun/',
+       'https://colorcodedlyrics.com/2015/01/14/gfriend-yeojachingu-glass-bead-yuliguseul/']
 
 for url in url:
     #Initialize main data table
