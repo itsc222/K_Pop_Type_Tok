@@ -13,23 +13,23 @@ import os
 
 # Specify the URL of the webpage to scrape
 
-url = ['https://colorcodedlyrics.com/2020/11/09/gfriend-yeojachingu-mago/',
-       'https://colorcodedlyrics.com/2020/07/13/gfriend-yeojachingu-apple/',
-       'https://colorcodedlyrics.com/2020/02/03/gfriend-yeojachingu-crossroads-gyochalo/',
-       'https://colorcodedlyrics.com/2019/11/21/gfriend-fallin-light/',
-       'https://colorcodedlyrics.com/2019/07/01/gfriend-fever/',
-       'https://colorcodedlyrics.com/2019/03/12/gfriend-flower/',
-       'https://colorcodedlyrics.com/2019/01/14/gfriend-yeojachingu-sunrise-haeya/',
-       'https://colorcodedlyrics.com/2018/09/21/gfriend-memoria/',
-       'https://colorcodedlyrics.com/2018/07/19/gfriend-sunny-summer/',
-       'https://colorcodedlyrics.com/2018/04/30/gfriend-yeojachangu-time-moon-night-bam/',
-       'https://colorcodedlyrics.com/2017/09/13/gfriend-yeojachingu-summer-rain-yeoleumbi/',
-       'https://colorcodedlyrics.com/2017/08/01/gfriend-yeojachingu-love-whisper-gwileul-giulimyeon/',
-       'https://colorcodedlyrics.com/2017/03/05/gfriend-fingertip/',
-       'https://colorcodedlyrics.com/2016/07/10/gfriend-yeojachingu-navillera-neo-geuligo-na/',
-       'https://colorcodedlyrics.com/2016/01/24/gfriend-rough-siganeul-dallyeoseo/',
-       'https://colorcodedlyrics.com/2015/07/22/gfriend-me-gustas-tu-oneulbuteo-ulineun/',
-       'https://colorcodedlyrics.com/2015/01/14/gfriend-yeojachingu-glass-bead-yuliguseul/']
+url = ['https://colorcodedlyrics.com/2017/01/20/2ne1-goodbye-annyeong/',
+       'https://colorcodedlyrics.com/2014/02/26/2ne1-come-back-home/',
+       'https://colorcodedlyrics.com/2014/02/26/2ne1-gotta-be-you/',
+       'https://colorcodedlyrics.com/2013/11/20/2ne1-missing-you-geuliwohaeyo/',
+       'https://colorcodedlyrics.com/2013/08/06/2ne1-do-you-love-me/',
+       'https://colorcodedlyrics.com/2013/07/07/2ne1-falling-in-love/',
+       'https://colorcodedlyrics.com/2012/07/05/2ne1-i-love-you/',
+       'https://colorcodedlyrics.com/2011/08/29/2ne1-ugly-cc-lyrics/',
+       'https://colorcodedlyrics.com/2011/10/14/2ne1_-_hate_you_cc_lyrics/',
+       'https://colorcodedlyrics.com/2011/06/28/2ne1-i-am-the-best-cc-lyrics/',
+       'https://colorcodedlyrics.com/2011/05/11/2ne1-lonely-cc-lyrics/',
+       'https://colorcodedlyrics.com/2011/03/31/2ne1-it-hurts-cc-lyrics/',
+       'https://colorcodedlyrics.com/2010/09/28/2ne1-cant-nobody-color-coded-lyrics/',
+       'https://colorcodedlyrics.com/2010/09/09/2ne1_-_go_away_color_coded_lyrics/',
+       'https://colorcodedlyrics.com/2010/09/09/2ne1-clap-your-hands-color-coded-lyrics/',
+       'https://colorcodedlyrics.com/2010/06/28/2ne1-dont-care-color-coded-lyrics/',
+       'https://colorcodedlyrics.com/2011/01/24/2ne1-fire-cc-lyrics/']
 
 for url in url:
     #Initialize main data table
@@ -172,7 +172,7 @@ for url in url:
 
         print(main_df)
 
-    except ValueError:
+    except (ValueError):
         try:
             # Find the table element using its HTML tag
             table = soup.find_all('table')
@@ -189,7 +189,12 @@ for url in url:
 
             cells = table.find_all('td')
 
-            hangul_lyrics = cells[1].text.strip()
+            try:
+
+                hangul_lyrics = cells[1].text.strip()
+            
+            except IndexError:
+                pass
 
             # print(hangul_lyrics)
 
@@ -226,24 +231,30 @@ for url in url:
             # Input string
             text = og_title
 
-            # Split the string by spaces
-            words = text.split(' – ')
-            words = text.split(' - ')
-            words = [word.split('Lyrics') for word in words]
+            try:
 
-            # print(words)
+                # Split the string by spaces
+                words = text.split(' – ')
+                words = text.split(' - ')
+                words = [word.split('Lyrics') for word in words]
 
-            title = words[1][0]
-            artist = words[0][0]
+                # print(words)
 
-            # Find the meta tag with the property "article:published_time"
-            published_time_tag = soup.find('meta', property='article:published_time')
+                title = words[1][0]
+                artist = words[0][0]
 
-            # Extract the content of the article:published_time tag
-            published_time = published_time_tag['content']
 
-            # Print the scraped article:published_time
-            # print('Published Time:', published_time)
+                # Find the meta tag with the property "article:published_time"
+                published_time_tag = soup.find('meta', property='article:published_time')
+
+                # Extract the content of the article:published_time tag
+                published_time = published_time_tag['content']
+
+                # Print the scraped article:published_time
+                # print('Published Time:', published_time)
+            
+            except IndexError:
+             pass
 
             from datetime import datetime
 
@@ -289,7 +300,7 @@ for url in url:
                                 'language': str})
 
                 main_df.extend(df)
-        except (IndexError, KeyError, NameError, AttributeError):
+        except (KeyError, NameError, AttributeError):
             print("no can do, boss. Maybe try a different song?")
             pass
     try:    
